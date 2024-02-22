@@ -1,0 +1,10 @@
+S=input()
+l1=[*S]
+s=input()[::-1]
+l2=[*s]
+m=input()
+for i in m:
+    if i.isupper():
+        print(l1.index(i)+1,end="")
+    else:
+        print(l2.index(i)+1,end="")
